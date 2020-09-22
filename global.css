@@ -1,0 +1,178 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+/* button:not(:disabled):active {
+  background-color: #ddd;
+} */
+
+button:focus {
+  border-color: #666;
+}
+.portada {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.952),
+      hsla(0, 0%, 7%, 0.952)
+    ),
+    url("./imgs/portada.jpg");
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.952),
+      hsla(0, 0%, 7%, 0.952)
+    ),
+    url("./imgs/portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: hsla(0, 0%, 0%, 0.89);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(68, 67, 67, 0.849);
+  border-radius: 10px;
+  border-right: 2px solid #2c2c2e70;
+}
+
+/* card proyect */
+.card-proyect-content {
+  margin: 2rem 1rem;
+  border-radius: 1rem;
+  position: relative; /*  */
+  cursor: pointer;
+}
+
+.card-proyect-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  margin: 2rem auto;
+  object-position: center;
+  object-fit: contain;
+  display: block;
+}
+.card-proyect-hover {
+  position: absolute; /* para que flote encima */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0); /* oculta el efecto hover */
+  background-color: #393e4688;
+  transition: transform 0.5s;
+  display: flex !important;
+  /* centra perfectamento dentro del contenedor */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 1em;
+}
+
+.card-circle-span {
+  text-decoration: none;
+  width: 5rem;
+  height: 5rem;
+  background-color: #29a19c;
+  display: flex;
+  /* centra perfectamento dentro del contenedor */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.card-circle-span:hover {
+  background-color: #0f5f5c;
+}
+.card-circle-span i {
+  color: white;
+  font-size: 2rem;
+}
+@media (max-width: 576px) {
+  .card-circle-span {
+    width: 5rem;
+    height: 5rem;
+  }
+  .card-circle-span i {
+    font-size: 1.8rem;
+  }
+}
+.card-proyect-name h4 {
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card-proyect:hover {
+  transform: scale(1.05);
+}
+.card-proyect-content:hover .card-proyect-hover {
+  transform: scale(1.05);
+}
+.card-proyect-content:hover .img-fluid {
+  filter: blur(2px);
+}
