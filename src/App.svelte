@@ -5,12 +5,12 @@
   import Proyects from "./Pages/Proyects.svelte";
   let routes = [
     {
-      path: "./",
+      path: "/",
       name: "Inicio",
       component: Index,
     },
     {
-      path: "./proyectos",
+      path: "/proyectos",
       name: "Proyectos",
       component: Proyects,
     },
