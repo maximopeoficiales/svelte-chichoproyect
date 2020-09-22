@@ -1,6 +1,6 @@
 {
   "name": "svelte-app",
-  "homepage": "https://maximopeoficiales.github.io/svelte-chichoproyect",
+  "homepage": "https://maximopeoficiales.github.io/svelte-chichoproyect/",
   "version": "1.0.0",
   "scripts": {
     "predeploy": "npm run build",
