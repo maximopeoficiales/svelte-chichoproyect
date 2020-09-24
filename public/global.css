@@ -85,7 +85,11 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+/* @media(min-width: 640px){
+      .portada{
+        height: 100vh;
+      }
+} */
 body::-webkit-scrollbar {
   width: 10px;
   background-color: hsla(0, 0%, 0%, 0.89);

@@ -51,14 +51,14 @@
           Acerca de Mi
         </h6>
         <h4 class="text-4xl font-extrabold">Soy Programador JS</h4>
-        <p class="text-xl font-light text-gray-200">
+        <p class="text-xl font-light text-gray-200 font-montserrat">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
           consequatur repudiandae ab fuga saepe dicta in nihil incidunt sint,
           provident nisi id aut itaque quis! Voluptatibus atque ea porro
           dignissimos?
         </p>
       </div>
-      <div class="p-4"><button class="btn btn-black">Conoceme</button></div>
+      <div class="p-4"><button class="btn btn-black font-montserrat">Conoceme</button></div>
     </div>
   </div>
 </section>

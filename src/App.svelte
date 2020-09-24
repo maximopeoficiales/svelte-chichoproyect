@@ -1,6 +1,7 @@
 <script>
   import { Router, Route } from "svelte-routing";
   import Navbar from "./Components/Navbar.svelte";
+  import About from "./Pages/About.svelte";
   import Index from "./Pages/Index.svelte";
   import Proyects from "./Pages/Proyects.svelte";
   let routes = [
@@ -8,6 +9,11 @@
       path: "/",
       name: "Inicio",
       component: Index,
+    },
+    {
+      path: "/sobre-mi",
+      name: "Sobre Mi",
+      component: About,
     },
     {
       path: "/proyectos",
